@@ -15,15 +15,22 @@ const Index = () => {
         />
       </div>
       <div className={styles.buttonRowContainer}>
-        <div className={styles.buttonRow}>
-          <button className={styles.button}>Button 1A</button>
-          <button className={styles.button}>Button 2A</button>
-          <button className={styles.button}>Button 3A</button>
+        <div className={styles.imageContainer}>
+        <img
+            src="/IMG_0069-4.png"
+            alt="Image"
+            width={500}
+            height={500}
+            className={`${styles.image} ${styles.centerImage}`} // Add the centerImage class here
+          />
         </div>
         <div className={styles.buttonRow}>
-          <button className={styles.button}>Button 4A</button>
-          <button className={styles.button}>Button 5A</button>
-          <button className={styles.button}>Button 6A</button>
+          <button className={`${styles.button} ${styles.bottomButton}`}>Button 1A</button>
+          <button className={`${styles.button} ${styles.bottomButton}`}>Button 2A</button>
+          <button className={`${styles.button} ${styles.bottomButton}`}>Button 3A</button>
+          <button className={`${styles.button} ${styles.bottomButton}`}>Button 4A</button>
+          <button className={`${styles.button} ${styles.bottomButton}`}>Button 5A</button>
+          <button className={`${styles.button} ${styles.bottomButton}`}>Button 6A</button>
         </div>
       </div>
       <aside className={styles.sidebar}>

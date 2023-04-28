@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   min-height: 100vh;
-  background-image: url('/template.png');
+  background-image: url('/template (2).png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 110%; /* Increase the background size to 110% */
@@ -24,7 +24,7 @@
   padding-right: 0.5vw; /* Add padding to the right */
   padding-left: 0.5vw; /* Add padding to the left */
   border-top: 4px solid rgb(0, 0, 0); /* Add this line to create a white frame on the top edge */
-
+z-index: 1;
 }
 
 .content:hover {
@@ -49,20 +49,21 @@
 .buttonRowContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Add this line to align the button rows to the left */
+  align-items: flex-start;
   position: absolute;
-  bottom: 0; /* Add this line to position the button rows at the bottom of the screen */
-  left: 10%; /* Add this line to position the button rows 10% from the left side */
+  top: 80%; /* Change this line to position the button rows 20% higher */
+  left: 10%;
+  width: 65%; /* Set the width of the buttonRowContainer */
 }
 
 .buttonRow {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Add space between the bottom row buttons */
   align-items: center;
   align-self: flex-end; /* Add this line to move the buttons to the bottom of the screen */
   padding: 0;
+  width: 100%; /* Set the width of the buttonRow */
 }
-
 .button {
   background-color: #000000;
   color: white;
@@ -70,7 +71,10 @@
   padding: 4vh 4vw;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-right: 1vw; /* Add this line to add space between the buttons */
+}
+
+.topButton {
+  margin-right: 1vw; /* Add space between the top buttons */
 }
 
 .button:hover {
@@ -91,4 +95,27 @@
 .sidebarButton:hover {
   background-color: #f1f1f1;
   color: black;
+}
+
+.bottomButton {
+  transform: scale(2); /* Adjust this value as desired to change the scale */
+  padding: 0;
+  border: 4px solid white; /* Add a white frame */
+  background-color: rgba(0, 0, 0, 0.5); /* Make the black part 50% transparent */
+}
+
+.imageContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -1000%; /* Add this line to move the image 10px higher */
+  left: 0;
+  display: flex;
+  align-items: center; /* Change this from flex-end to center */
+  justify-content: center;
+  z-index: 0;
+}
+
+.centerImage {
+  border: 0px solid white; /* Add a white border around the center image */
 }
