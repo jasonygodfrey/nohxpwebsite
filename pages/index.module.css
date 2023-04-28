@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    background-image: url('/template.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .content {
+    flex-grow: 1;
+  }
+  
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sidebarButton {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebarButton:hover {
+    background-color: #f1f1f1;
+  }
+  

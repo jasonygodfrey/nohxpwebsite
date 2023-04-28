@@ -1,19 +1,17 @@
 import React from 'react';
-import Image from 'next/image';
+import styles from './index.module.css';
 
 const Index = () => {
   return (
-    <div>
-      <h1>Hello, Next.js!</h1>
-      <div style={{ position: 'relative', width: '100%', height: 'auto' }}>
-        <Image
-          src="/template.png"
-          alt="My Picture"
-          layout="responsive"
-          width={500} // Replace with the original image width
-          height={300} // Replace with the original image height
-        />
+    <div className={styles.container}>
+      <div className={styles.content}>
       </div>
+      <aside className={styles.sidebar}>
+        <button className={styles.sidebarButton}>Button 1</button>
+        <button className={styles.sidebarButton}>Button 2</button>
+        <button className={styles.sidebarButton}>Button 3</button>
+        <button className={styles.sidebarButton}>Button 4</button>
+      </aside>
     </div>
   );
 };
