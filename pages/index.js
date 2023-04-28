@@ -11,6 +11,12 @@ const Index = () => {
         <button className={styles.sidebarButton}>Button 2</button>
         <button className={styles.sidebarButton}>Button 3</button>
         <button className={styles.sidebarButton}>Button 4</button>
+        <button className={styles.sidebarButton}>Button 5</button>
+        <button className={styles.sidebarButton}>Button 6</button>
+        <button className={styles.sidebarButton}>Button 7</button>
+        <button className={styles.sidebarButton}>Button 8</button>
+        <button className={styles.sidebarButton}>Button 9</button>
+        <button className={styles.sidebarButton}>Button 10</button>
       </aside>
     </div>
   );
