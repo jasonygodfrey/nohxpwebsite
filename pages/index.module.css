@@ -5,35 +5,90 @@
   background-image: url('/template.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 110%; /* Increase the background size to 110% */
+  background-attachment: fixed;
 }
 
 .content {
   flex-grow: 1;
+  position: absolute;
+  top: 1%;
+  left: 10%; /* Move the logo 20% to the right */
+  width: 20%; /* Set the width of the logo */
+  height: auto; /* Maintain the aspect ratio */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: invert(100%);
+  background-color: #000000;
+  padding-right: 0.5vw; /* Add padding to the right */
+  padding-left: 0.5vw; /* Add padding to the left */
+  border-top: 4px solid rgb(0, 0, 0); /* Add this line to create a white frame on the top edge */
+
+}
+
+.content:hover {
+  filter: invert(0%);
 }
 
 .sidebar {
-  background-color: #949494;
+  background-color: #ededed;
   position: absolute;
   top: 0;
   left: 75%; /* Set the left position to 20% */
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-right: 1vw; /* Add padding to the right */
-  padding-left: 1vw; /* Add padding to the left */
-  
+  gap: 7px;
+  padding-right: 0.5vw; /* Add padding to the right */
+  padding-left: 0.5vw; /* Add padding to the left */
+  display: flex; /* Add this line to make the rowButtons div a flex container */
+  justify-content: space-between; /* Add this line to add space between the two rows of buttons */
+}
+
+.buttonRowContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Add this line to align the button rows to the left */
+  position: absolute;
+  bottom: 0; /* Add this line to position the button rows at the bottom of the screen */
+  left: 10%; /* Add this line to position the button rows 10% from the left side */
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end; /* Add this line to move the buttons to the bottom of the screen */
+  padding: 0;
+}
+
+.button {
+  background-color: #000000;
+  color: white;
+  border: 0px solid #000000;
+  padding: 4vh 4vw;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 1vw; /* Add this line to add space between the buttons */
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+  color: black;
 }
 
 .sidebarButton {
-  background-color: #00ff00;
-  border: 1px solid #000000;
-  padding: 4vh 4vw; 
+  background-color: #000000;
+  color: white;
+  border: 0px solid #000000;
+  padding: 4vh 4vw;
   cursor: pointer;
   transition: background-color 0.3s;
+  
 }
 
 .sidebarButton:hover {
   background-color: #f1f1f1;
+  color: black;
 }
