@@ -52,15 +52,24 @@ const Index = () => {
   href="https://www.instagram.com/nohxpeco/"
   target="_blank"
   rel="noopener noreferrer"
-  className={`${styles.sidebarLink} ${styles.instagramLink}`} // Add the instagramLink class to the <a> tag
+  className={`${styles.sidebarLink} ${styles.instagramLink} link`}
 >
-  <button className={`${styles.sidebarButton} ${styles.button1b}`}>INSTAGRAM</button>
+  <button className={`${styles.sidebarButton} ${styles.button1b} ${styles.socialButton}`}><span style={{ textAlign: 'center' }}>INSTAGRAM</span></button>
+</a>
+
+<a
+  href="https://twitter.com/NoHxpeCo"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`${styles.sidebarLink} ${styles.twitterLink} link`}
+>
+  <button className={`${styles.sidebarButton} ${styles.button4b} ${styles.socialButton}`}> <span style={{ textAlign: 'center' }}>TWITTER</span></button>
 </a>
 
 
-        <button className={`${styles.sidebarButton} ${styles.button4b}`}>TWITTER</button>
-
-        <button className={`${styles.sidebarButton} ${styles.button9b}`}>TBA</button>
+        <button className={`${styles.sidebarButton} ${styles.button9b}`}>
+        <span style={{ textAlign: 'center' }}>TBA</span>
+          </button>
 
       </aside>
     </div>

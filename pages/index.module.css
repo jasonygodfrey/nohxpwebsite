@@ -15,6 +15,8 @@
   height: auto; /* Maintain the aspect ratio */
   max-width: 500px; /* Set the maximum width for the image */
   max-height: 100px; /* Set the maximum height for the image */
+  min-width: 300px; /* Add this line to set the minimum width */
+
 }
 
 
@@ -106,6 +108,7 @@ z-index: 1;
   border: 2px solid #ffffff;
   padding: 4vh 4vw;
   cursor: pointer;
+  text-align: center; /* Add this line */
   transition: background-color 0.3s;
 }
 
@@ -133,7 +136,9 @@ z-index: 1;
   z-index: 0;
   transform: translate(-50%, -50%); /* Add this line to adjust the positioning */
 }
-
+.socialButton {
+  width: 150px; /* Set the desired width here */
+}
 
 
 
@@ -230,9 +235,29 @@ z-index: 1;
   font-family: 'JMH Typewriter-Bold', sans-serif;
 }
 
+
 .sidebarLinkWrapper {
   display: inline-block;
   text-decoration: none;
 }
 
 
+.socialButton {
+  width: 150px; /* Set the desired width here */
+  display: flex;
+  justify-content: center;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.instagramLink,
+a.twitterLink {
+  text-decoration: none;
+}
