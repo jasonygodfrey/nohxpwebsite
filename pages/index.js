@@ -7,7 +7,7 @@ const Index = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <Image
-          src="/logo.jpg"
+          src="/logoknife.png"
           alt="Logo"
           width={10}
           height={10}

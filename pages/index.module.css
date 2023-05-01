@@ -36,7 +36,7 @@
 .content {
   flex-grow: 1;
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 10%; /* Move the logo 20% to the right */
   width: 20%; /* Set the width of the logo */
   height: auto; /* Maintain the aspect ratio */
@@ -44,7 +44,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   filter: invert(100%);
-  background-color: #000000;
+  background-color: #ffffff;
 
   border: 2px solid rgb(0, 0, 0); /* Add this line to create a white frame on the top edge */
 z-index: 1;
