@@ -1,18 +1,40 @@
+@font-face {
+  font-family: 'JMH Typewriter-Bold';
+  src: url('/fonts/JMH_Typewriter-Bold.ttf') format('truetype');
+}
+
+
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 50%; /* Set the desired width relative to the window size */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 500px; /* Set the maximum width for the image */
+  max-height: 100px; /* Set the maximum height for the image */
+}
+
+
+
+
 .container {
   position: relative;
   display: flex;
   min-height: 100vh;
-  background-image: url('/template (2).png');
+  background-image: url('/template3.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 110%; /* Increase the background size to 110% */
+  background-size: cover; /* Increase the background size to 110% */
   background-attachment: fixed;
 }
 
 .content {
   flex-grow: 1;
   position: absolute;
-  top: 1%;
+  top: 15%;
   left: 10%; /* Move the logo 20% to the right */
   width: 20%; /* Set the width of the logo */
   height: auto; /* Maintain the aspect ratio */
@@ -21,9 +43,8 @@
   background-size: contain;
   filter: invert(100%);
   background-color: #000000;
-  padding-right: 0.5vw; /* Add padding to the right */
-  padding-left: 0.5vw; /* Add padding to the left */
-  border-top: 4px solid rgb(0, 0, 0); /* Add this line to create a white frame on the top edge */
+
+  border: 2px solid rgb(0, 0, 0); /* Add this line to create a white frame on the top edge */
 z-index: 1;
 }
 
@@ -32,18 +53,15 @@ z-index: 1;
 }
 
 .sidebar {
-  background-color: #ededed;
   position: absolute;
   top: 0;
-  left: 75%; /* Set the left position to 20% */
+  left: 75%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  padding-right: 0.5vw; /* Add padding to the right */
-  padding-left: 0.5vw; /* Add padding to the left */
-  display: flex; /* Add this line to make the rowButtons div a flex container */
-  justify-content: space-between; /* Add this line to add space between the two rows of buttons */
+  align-items: flex; /* Change to flex */
+  justify-content: space-between;
+  flex-wrap: wrap; /* Add flex-wrap */
 }
 
 .buttonRowContainer {
@@ -83,20 +101,19 @@ z-index: 1;
 }
 
 .sidebarButton {
-  background-color: #000000;
+  background-color: transparent;
   color: white;
-  border: 0px solid #000000;
+  border: 2px solid #ffffff;
   padding: 4vh 4vw;
   cursor: pointer;
   transition: background-color 0.3s;
-  
 }
 
 .sidebarButton:hover {
   background-color: #f1f1f1;
-  color: black;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255); /* Add this line to create a white border on hover */
 }
-
 .bottomButton {
   transform: scale(2); /* Adjust this value as desired to change the scale */
   padding: 0;
@@ -105,17 +122,117 @@ z-index: 1;
 }
 
 .imageContainer {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
-  top: -1000%; /* Add this line to move the image 10px higher */
-  left: 0;
+  top: 50%;
+  left: 50%;
   display: flex;
-  align-items: center; /* Change this from flex-end to center */
+  align-items: center;
   justify-content: center;
   z-index: 0;
+  transform: translate(-50%, -50%); /* Add this line to adjust the positioning */
 }
 
+
+
+
 .centerImage {
-  border: 0px solid white; /* Add a white border around the center image */
+  border: 2px solid white; /* Add a white border around the center image */
+  
 }
+
+
+
+
+.button1b {
+  background-image: url('/button1b.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.button2b {
+  background-image: url('/button2b.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button3b {
+  background-image: url('/button3b.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button4b {
+  background-image: url('/button4b.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  margin-bottom: 10vh; /* Add or adjust this line to reduce the space below button 4b. */
+}
+.button5b {
+  background-image: url('/button5b.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button6b {
+  background-image: url('/button6b.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button7b {
+  background-image: url('/button7b.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button8b {
+  background-image: url('/button8b.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.button9b {
+  background-image: url('/button9b.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -30vh; /* Add or adjust this line to reduce the space above button 9b. */
+  position: relative; /* Add this line to enable the use of the 'top' property */
+  
+}
+.button9b:hover {
+  filter: invert(100%);
+}
+
+.button4b:hover {
+  filter: invert(100%);
+}
+.button1b:hover {
+  filter: invert(100%);
+}
+
+.instagramLink {
+  position: relative;
+  top: 20%; /* Adjust this value to move the Instagram button down */
+  font-family: 'JMH Typewriter-Bold', sans-serif;
+}
+
+.twitterLink {
+  position: relative;
+  font-family: 'JMH Typewriter-Bold', sans-serif;
+}
+
+.sidebarLinkWrapper {
+  display: inline-block;
+  text-decoration: none;
+}
+
+
