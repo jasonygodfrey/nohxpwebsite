@@ -64,6 +64,7 @@ z-index: 1;
   align-items: flex; /* Change to flex */
   justify-content: space-between;
   flex-wrap: wrap; /* Add flex-wrap */
+  font-family: 'JMH Typewriter-Bold', sans-serif;
 }
 
 .buttonRowContainer {
@@ -74,6 +75,7 @@ z-index: 1;
   top: 80%; /* Change this line to position the button rows 20% higher */
   left: 10%;
   width: 65%; /* Set the width of the buttonRowContainer */
+  font-family: 'JMH Typewriter-Bold', sans-serif;
 }
 
 .buttonRow {
@@ -83,6 +85,7 @@ z-index: 1;
   align-self: flex-end; /* Add this line to move the buttons to the bottom of the screen */
   padding: 0;
   width: 100%; /* Set the width of the buttonRow */
+  font-family: 'JMH Typewriter-Bold', sans-serif;
 }
 .button {
   background-color: #000000;
@@ -91,6 +94,7 @@ z-index: 1;
   padding: 4vh 4vw;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-family: 'JMH Typewriter-Bold', sans-serif;
 }
 
 .topButton {
@@ -110,6 +114,7 @@ z-index: 1;
   cursor: pointer;
   text-align: center; /* Add this line */
   transition: background-color 0.3s;
+  font-family: 'JMH Typewriter-Bold', sans-serif;
 }
 
 .sidebarButton:hover {
