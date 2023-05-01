@@ -33,7 +33,7 @@ const Index = () => {
       <div className={styles.buttonRowContainer}>
         <div className={styles.imageContainer}>
         <img
-            src="/IMG_0069-3.png"
+            src="/giphy3.gif"
             alt="Image"
             width={500}
             height={500}
@@ -54,7 +54,10 @@ const Index = () => {
   */
 }
 <div className={styles.textContainer}>
-    <p>нет надежды | FE CIEGA | нет надежды | FE CIEGA | нет надежды | FE CIEGA | нет надежды | FE CIEGA </p>
+    <p>нет надежды | FE CIEGA 
+    <br /> нет надежды | FE CIEGA <br />
+     нет надежды | FE CIEGA 
+     <br /> нет надежды | FE CIEGA </p>
   </div>
       </div>
       <aside className={styles.sidebar}>
