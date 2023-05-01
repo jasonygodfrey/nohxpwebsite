@@ -45,7 +45,7 @@
   background-size: contain;
   filter: invert(100%);
   background-color: #ffffff;
-
+  min-width: 150px; /* increase the minimum width to 500px */
   border: 2px solid rgb(0, 0, 0); /* Add this line to create a white frame on the top edge */
 z-index: 1;
 }
