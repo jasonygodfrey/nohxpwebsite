@@ -267,3 +267,19 @@ a.instagramLink,
 a.twitterLink {
   text-decoration: none;
 }
+
+
+.textContainer {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+}
+

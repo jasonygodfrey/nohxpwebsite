@@ -1,10 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './index.module.css';
+import { Helmet } from 'react-helmet';
+
 
 const Index = () => {
   return (
+    
     <div className={styles.container}>
+            <Helmet>
+        <title>NOHXPE</title>
+        <link rel="icon" type="image/png" href="favicon.png"/>
+      </Helmet>
       <div className={styles.content}>
         <Image
           src="/logoknife.png"
@@ -33,6 +40,7 @@ const Index = () => {
             className={`${styles.image} ${styles.centerImage}`} // Add the centerImage class here
           />
         </div>
+        
         {
   /* 
   <div className={styles.buttonRow}>
@@ -45,7 +53,9 @@ const Index = () => {
   </div>
   */
 }
-
+<div className={styles.textContainer}>
+    <p>нет надежды | FE CIEGA | нет надежды | FE CIEGA | нет надежды | FE CIEGA | нет надежды | FE CIEGA </p>
+  </div>
       </div>
       <aside className={styles.sidebar}>
       <a
